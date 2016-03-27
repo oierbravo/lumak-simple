@@ -1,7 +1,6 @@
 'use strict';
 
 const hooks = require('./hooks');
-const _ = require('lodash');
 
 class Service {
   constructor(options) {
