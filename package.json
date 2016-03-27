@@ -1,0 +1,25 @@
+{
+  "name": "lumak-simple",
+  "version": "0.0.2",
+  "description": "FeathersJs simple service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oierbravo/lumak-simple.git"
+  },
+  "keywords": [
+    "feathersjs"
+  ],
+  "author": "Oier Bravo Urtasun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oierbravo/lumak-simple/issues"
+  },
+  "homepage": "https://github.com/oierbravo/lumak-simple#readme",
+  "dependencies": {
+    "lodash": "^4.6.1"
+  }
+}
