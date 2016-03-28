@@ -8,9 +8,19 @@ class Service {
     this.datos = {
       relay1:'on',
       relay2:'on',
+      relay3:'on',
+      relay4:'on',
+      relay5:'on',
+      relay6:'on',
       color:'#00ff00',
       motor1Speed:0,
-      motor2Speed:0
+      motor2Speed:0,
+      turretX:127,
+      turretY:127,
+      turretLaser:1,
+      servo1:127,
+      servo2:127
+      
     }
    
   }
@@ -49,8 +59,12 @@ class Service {
    // console.log('update-params',params);
     if(typeof this.datos[id] !== 'undefined'){
       this.datos[id] = data.value;
+      return Promise.resolve({id:id,value:data.value});
+    } else {
+      //console.log('NOT FOUND');
+      return Promise.reject(new Error("fail"));
     }
-    return Promise.resolve({id:id,value:data.value});
+    
   }
 
   patch(id, data, params) {

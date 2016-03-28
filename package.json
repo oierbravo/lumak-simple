@@ -1,6 +1,6 @@
 {
   "name": "lumak-simple",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "FeathersJs simple service.",
   "main": "index.js",
   "scripts": {
